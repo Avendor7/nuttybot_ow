@@ -1,0 +1,22 @@
+{
+  "name": "nuttybot_ow",
+  "version": "1.0.0",
+  "description": "twitch bot for Canadia",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step1041/nuttybot_ow.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/step1041/nuttybot_ow/issues"
+  },
+  "homepage": "https://github.com/step1041/nuttybot_ow#readme",
+  "dependencies": {
+    "tmi.js": "^1.2.1"
+  }
+}
