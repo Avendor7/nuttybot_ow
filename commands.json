@@ -1,0 +1,14 @@
+[
+  {
+    "command":"!heynuttybot",
+    "response": "'Hey ' + user['display-name']"
+  },
+  {
+    "command":"!throwing",
+    "response": "'Canadia is throwing'"
+  },
+  {
+    "command":"!nutty",
+    "response": "'ITS NUTTY'"
+  }
+]
