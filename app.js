@@ -27,18 +27,11 @@ client.on('connected', function(address,port){
 
 client.on('chat', function (channel, user, message, self) {
     if (self) return;
+    var commands = JSON.parse('commands.json');
 
-    fs.readFile('./people.json', 'utf8', function (err,data) {
-        data = JSON.parse(data); // you missed that...
-        for(var i = 0; i < data.length; i++) {
-            var newPerson = new Person();
-            newPerson.firstname = data[i].firstname;
-            newPerson.lastname = data[i].lastname;
-            newPerson.age = data[i].age;
-            newPerson.save(function (err) {});
-        }
-    });
-
+    for (var items in commands){
+        console.log('Command: ' + items.command + " Response: " + items.response);
+    }
 
     if (message.startsWith("!")) {
         client.action("avendor7", user['display-name'] + " is boosted");
