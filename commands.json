@@ -1,14 +1,18 @@
 [
   {
     "command":"!heynuttybot",
-    "response": "'Hey ' + user['display-name']"
+    "response": "hey {{displayName}}"
   },
   {
     "command":"!throwing",
-    "response": "'Canadia is throwing'"
+    "response": "Canadia is throwing"
   },
   {
     "command":"!nutty",
-    "response": "'ITS NUTTY'"
+    "response": "ITS NUTTY"
+  },
+  {
+    "command":"!modme",
+    "response": "NUTTY BOT FOR MOD 2017"
   }
 ]

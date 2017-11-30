@@ -4,7 +4,7 @@
   "description": "twitch bot for Canadia",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "dependencies": {
     "dotenv": "^4.0.0",
     "tmi.js": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }

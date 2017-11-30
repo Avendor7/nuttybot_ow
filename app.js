@@ -1,5 +1,6 @@
 var tmi = require('tmi.js');
 var env = require('dotenv').config();
+var fs = require('fs');
 
 var options = {
     options: {
@@ -13,7 +14,7 @@ var options = {
         username: process.env.USERNAME,
         password: process.env.PASSWORD
     },
-    channels: ["avendor7"]
+    channels: ["Avendor7"]
 };
 
 var client = new tmi.client(options);
@@ -22,19 +23,24 @@ client.connect();
 
 
 client.on('connected', function(address,port){
-    client.action("avendor7", "connected");
+    client.action("Avendor7", "connected");
 });
 
 client.on('chat', function (channel, user, message, self) {
     if (self) return;
-    var commands = JSON.parse('commands.json');
 
-    for (var items in commands){
-        console.log('Command: ' + items.command + " Response: " + items.response);
-    }
+    var obj;
+    fs.readFile('commands.json', 'utf8', function (err, data) {
+        if (err) throw err;
+        obj = JSON.parse(data);
 
-    if (message.startsWith("!")) {
-        client.action("avendor7", user['display-name'] + " is boosted");
-    }
+        for (var items in obj){
+            if (message.startsWith(obj[items].command)) {
+                client.say("Avendor7", obj[items].response.replace("{{displayName}}", user['display-name']));
+
+            }
+        }
+    });
+
 
 });
