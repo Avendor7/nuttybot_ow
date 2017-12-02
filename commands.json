@@ -14,5 +14,70 @@
   {
     "command":"!modme",
     "response": "NUTTY BOT FOR MOD 2017"
+  },
+  {
+    "command":"heyavendor",
+    "response": "AVENDOR IS MINE BACK OFF BITCH"
+  },
+  {
+    "command":"!moobot",
+    "response": "Moobot is dead"
+  },
+  {
+    "command":"!whokilledmoobot",
+    "response": "I did"
+  },
+  {
+    "command":"!snoop",
+    "response": "cheated on Canadia"
+  },
+  {
+    "command":"!battlemercy",
+    "response": "FRAGGING OUT PogChamp "
+  },
+  {
+    "command":"!boyfriend",
+    "response": "LUL Nope "
+  },
+  {
+    "command":"!discord",
+    "response": "Click on the cute lil cat face below stream to come join my discord! :D"
+  },
+  {
+    "command":"!goldenguns",
+    "response": "Mercy, Dva, Sombra"
+  },
+  {
+    "command":"!guide",
+    "response": "https://clips.twitch.tv/SpotlessAstuteMagpieBleedPurple"
+  },
+  {
+    "command":"!mercytips",
+    "response": "Abuse LOS, GA a lot, A/D/Crouch spam, try to be as unpredictable as possible. Don't stare at your healing target, always be observant of allies/enemies. DON'T DIE."
+  },
+  {
+    "command":"!miss",
+    "response": "Canadia wasn´t able to hit a standing target for the 3 time."
+  },
+  {
+    "command":"!oooh",
+    "response": "https://clips.twitch.tv/VainClearPartridgeSMOrc"
+  },
+  {
+    "command":"!skins",
+    "response": "1 Sigrun, #2 Witch, #3 Winged Victory, #4 Cobalt, #5 Devil."
+  },
+  {
+    "command":"!tip",
+    "response": "https://streamlabs.com/misscanadia_ow"
+  },
+  {
+    "command":"!zeerocious",
+    "response": "https://clips.twitch.tv/TameBumblingHamburgerJKanStyle"
+  },
+  {
+    "command":"!Avendor",
+    "response": "#1 Sub"
   }
+
 ]

@@ -14,7 +14,7 @@ var options = {
         username: process.env.USERNAME,
         password: process.env.PASSWORD
     },
-    channels: ["Avendor7"]
+    channels: ["misscanadia_ow"]
 };
 
 var client = new tmi.client(options);
@@ -23,7 +23,7 @@ client.connect();
 
 
 client.on('connected', function(address,port){
-    client.action("Avendor7", "connected");
+    client.action("misscanadia_ow", "connected");
 });
 
 client.on('chat', function (channel, user, message, self) {
@@ -36,11 +36,16 @@ client.on('chat', function (channel, user, message, self) {
 
         for (var items in obj){
             if (message.startsWith(obj[items].command)) {
-                client.say("Avendor7", obj[items].response.replace("{{displayName}}", user['display-name']));
-
+                client.say("misscanadia_ow", obj[items].response.replace("{{displayName}}", user['display-name']));
             }
         }
     });
 
 
 });
+
+function handleCounters(number) {
+
+
+}
+
